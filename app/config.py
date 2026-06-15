@@ -18,7 +18,7 @@ ACCESS_TOKEN_EXPIRE_MINUTES = int(os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES", "720"
 
 # Em produção: DATABASE_URL com PostgreSQL do Supabase.
 # Em desenvolvimento: SQLite (padrão) ou defina DATABASE_URL manualmente.
-DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./manutencao.db")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql+psycopg2://postgres:S@gui126307@db.tltuihtisnmmabojukal.supabase.co:5432/postgres")
 
 # Origens liberadas para CORS (app Flet web, TV, etc.)
 # Em produção, restrinja às URLs do seu app (ex.: https://seuapp.vercel.app)
